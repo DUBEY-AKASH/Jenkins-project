@@ -39,18 +39,18 @@ pipeline{
         }
     }
 
-    post{
-        always {
-            //if the pipeline fails or suceeds whatever happens post attribute will always run
+    // post{
+    //     always {
+    //         //if the pipeline fails or suceeds whatever happens post attribute will always run
 
             
-        }
-        success{
+    //     }
+    //     success{
 
-        }
+    //     }
 
-        failure{
+    //     failure{
 
-        }
-    }
+    //     }
+    // }
 }
