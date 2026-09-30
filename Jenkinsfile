@@ -3,17 +3,17 @@ pipeline{
     stages{
         stage ("build"){
             steps {
-                sh echo "buliding the application"
+                sh 'echo "buliding the application"'
             }
         }
         stage ("build"){
             steps {
-                sh echo "buliding the application"
+                sh echo '"buliding the application"'
             }
         }
         stage ("build"){
             steps {
-                sh echo "buliding the application"
+                sh 'echo "buliding the application"'
             }
         }
     }
