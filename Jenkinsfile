@@ -1,4 +1,5 @@
 //CODE_CHAGES = getGitchanges --- this is groovy script which will check if there any changes in code-bases
+def gv 
 
 pipeline{
     agent any
@@ -20,6 +21,17 @@ pipeline{
 
 
     stages{
+
+        stage("init"){
+            steps {
+                script {
+                    gv =load "script.groovy"
+                }
+            }
+        }
+
+
+
         stage ("build"){
             // when{
             //     expression{
@@ -27,7 +39,9 @@ pipeline{
             //     }
             // }            
             steps {
-                echo "buliding the application"
+                script {
+                    gv.buildApp()
+                }
                 // echo "building version ${NEW_VERSION}"
 
 
