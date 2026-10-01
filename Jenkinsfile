@@ -55,7 +55,7 @@ pipeline{
                 //     sh "Script ${USER} ${PWD}"
                 // }
 
-                echo "deploying version ${VERSION}"
+                echo "deploying version ${params.VERSION}"
             }
         }
     }
