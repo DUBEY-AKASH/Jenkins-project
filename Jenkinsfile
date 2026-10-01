@@ -28,7 +28,7 @@ pipeline{
             // }            
             steps {
                 echo "buliding the application"
-                echo "building version ${NEW_VERSION}"
+                // echo "building version ${NEW_VERSION}"
 
 
             }
